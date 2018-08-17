@@ -66,10 +66,8 @@
         };
       },
       nextAction() {
-        console.log(this.preview);
         this.preview.loading = true;
         var index = this.preview.list.indexOf(this.preview.current);
-        console.log(index);
         if (index === this.preview.list.length - 1) {
           this.preview.loading = false;
           return;
