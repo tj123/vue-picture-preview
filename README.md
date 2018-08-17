@@ -45,6 +45,9 @@ Vue.use(vuePicturePreview)
      :key="index"
      preview-title-enable="true"
      preview-nav-enable="true">
+<!-- 也可以这样使用 -->     
+<img v-for="(img,index) in imgs"
+     v-preview/>
 ```
 
 ```javascript
